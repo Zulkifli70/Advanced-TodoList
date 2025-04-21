@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft To Do Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="sidebar">
+      <div class="user-profile">
+        <div class="profile-pic">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="user-info">
+          <h3>User Name</h3>
+          <p>user@example.com</p>
+        </div>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <i class="fas fa-sun"></i>
+            <span>My Day</span>
+            <span class="count">1</span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-star"></i>
+            <span>Important</span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-calendar"></i>
+            <span>Planned</span>
+            <span class="count">1</span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Assigned to me</span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Tasks</span>
+            <span class="count">1</span>
+          </li>
+          <li class="nav-item active">
+            <i class="fas fa-lightbulb"></i>
+            <span>Getting started</span>
+            <span class="count">7</span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Groceries</span>
+            <span class="count">5</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="bottom-nav">
+        <button class="new-list-btn">
+          <i class="fas fa-plus"></i>
+          <span>New list</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <div class="title-area">
+          <i class="fas fa-lightbulb title-icon"></i>
+          <h2>Getting started</h2>
+        </div>
+        <div class="header-icons">
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+      </div>
+
+      <div id="task-list">
+        <div class="task-item">
+          <div class="task-circle"></div>
+          <div class="task-text">
+            Add your first task by clicking on "+ Add a task"
+          </div>
+          <i class="far fa-star"></i>
+        </div>
+
+        <div class="task-item">
+          <div class="task-circle"></div>
+          <div class="task-text">
+            <div>Select this task to add a reminder and due date</div>
+            <div class="note"><i class="far fa-sticky-note"></i> Note</div>
+          </div>
+          <i class="far fa-star"></i>
+        </div>
+
+        <div class="task-item">
+          <div class="task-circle"></div>
+          <div class="task-text">
+            <div>Break this task into smaller steps</div>
+            <div class="subtask">0 of 1</div>
+          </div>
+          <i class="far fa-star"></i>
+        </div>
+
+        <div class="task-item">
+          <div class="task-circle"></div>
+          <div class="task-text">
+            <div>Open this task's detail view to add it to My Day</div>
+            <div class="note"><i class="far fa-sticky-note"></i> Note</div>
+          </div>
+          <i class="far fa-star"></i>
+        </div>
+
+        <div class="task-item">
+          <div class="task-circle"></div>
+          <div class="task-text">
+            <div>Add #hashtags to a task's title to categorize it</div>
+            <div class="note"><i class="far fa-sticky-note"></i> Note</div>
+          </div>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+
+      <div class="add-task-area">
+        <i class="fas fa-plus"></i>
+        <input type="text" id="task-input" placeholder="Add a task" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
